@@ -12,7 +12,7 @@ import Home from './Home';
 import Artist from './Artist';
 
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div>
         <Navbar color="faded" light expand="md">
           <NavbarBrand tag={Link} to="/">EventSearch</NavbarBrand>
